@@ -25,6 +25,12 @@ video {
     vertical-align: bottom;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
 main .main-container {
     max-width: 1040px;
     margin: 0 auto;
@@ -61,33 +67,29 @@ main .main-container {
  * ***************************************
  */
 
+
+
 .column1 {
-    width: 100%;
-    height: 100%;
+    border-top: solid 2px #808080;
     display: flex;
     margin: 15px 0;
-    background-color: #fff;
+    padding-top: 40px;
 }
 
 .column1 .image {
     margin: 0 10px 0 0;
-    height: 300px;
-    width: 300px;
 }
 
-.column1 img {
-    width: 130%;
-}
 
 .column1 .text {
     width: 50%;
     padding: 1rem;
-    float: right;
     margin: 2px;
     height: 300px;
 }
 
 .column1 .text p {
-    font-size: .75rem;
-    text-align: center;
+    font-size: 1.15rem;
+    text-align: left;
+    color: #fff;
 }
