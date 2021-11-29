@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*
+ * ***************************************
+ * ページ全体に関わるCSSの設定
+ * ***************************************
+ */
+
+ html {
+     font-size: 16px;
+ }
+
+ h1, h2, h3, h4, h5, h6, th, strong {
+    font-weight: 700;
+  }
+
+body {
+    font-weight: 500;
+    background-color: #000;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+main .main-container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+/*
+ * ***************************************
+ * hero部分のCSS　・・・文字を自動で縮小したい
+ * ***************************************
+ */
+
+.hero-container {
+    margin-bottom: 80px;
+}
+.hero-movie {
+    position: relative;
+}
+.hero-text {
+    width:500px;
+    position: absolute;
+    top:  50%;
+    left: 30px; 
+}
+
+.hero-text p {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 3.5rem;
+}
+
+/*
+ * ***************************************
+ * フレックスボックス系のコラム
+ * ***************************************
+ */
+
+.column1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 15px 0;
+    background-color: #fff;
+}
+
+.column1 .image {
+    margin: 0 10px 0 0;
+    height: 300px;
+    width: 300px;
+}
+
+.column1 img {
+    width: 130%;
+}
+
+.column1 .text {
+    width: 50%;
+    padding: 1rem;
+    float: right;
+    margin: 2px;
+    height: 300px;
+}
+
+.column1 .text p {
+    font-size: .75rem;
+    text-align: center;
+}
