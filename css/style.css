@@ -6,6 +6,11 @@
  * ***************************************
  */
 
+ html *,
+ ::before,
+ ::after {
+     box-sizing: border-box;
+ }
  html {
      font-size: 16px;
      color: #fff;
@@ -37,6 +42,23 @@ main .main-container {
     margin: 0 auto;
     padding: 0 20px 0 20px;
 }
+
+/*
+ * ***************************************
+ * Headr部分のCSS　
+ * ***************************************
+ */
+.header-container {
+    display: flex;
+    justify-content:space-between;
+    
+}
+.header-logo img {
+    width: 250px;
+}
+
+
+
 /*
  * ***************************************
  * hero部分のCSS　・・・文字を自動で縮小したい
