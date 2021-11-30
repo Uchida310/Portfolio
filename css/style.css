@@ -8,6 +8,7 @@
 
  html {
      font-size: 16px;
+     color: #fff;
  }
 
  h1, h2, h3, h4, h5, h6, th, strong {
@@ -16,7 +17,7 @@
 
 body {
     font-weight: 500;
-    background-color: #000;
+    background-color: #1a1a1a;
 }
 
 video {
@@ -73,23 +74,103 @@ main .main-container {
     border-top: solid 2px #808080;
     display: flex;
     margin: 15px 0;
-    padding-top: 40px;
+    padding-top: 70px;
 }
 
-.column1 .image {
-    margin: 0 10px 0 0;
+.column2 {
+    border-top: solid 2px #CCCCCC;
+    display: flex;
+    margin: 70px 0;
+    padding: 70px 0 0 0;
 }
 
+ .image {
+     width: 50%;
+    margin: 0 10px 0 10px;
+}
 
-.column1 .text {
+.text {
     width: 50%;
-    padding: 1rem;
     margin: 2px;
     height: 300px;
 }
 
-.column1 .text p {
+.text p {
     font-size: 1.15rem;
     text-align: left;
     color: #fff;
 }
+
+/*
+ * ***************************************
+ * グリッドレイアウト系のCSS
+ * ***************************************
+ */
+
+ .grid-container {
+     margin: 0 0 60px 0;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-auto-rows: minmax(300px, 300px);
+ }
+
+.grid {
+    text-align: center;
+}
+ .grid1 {
+     border-bottom: 1px solid #808080;
+     border-right: 1px solid #808080;
+ }
+
+ .grid2 {
+     border-left: 1px solid #808080;
+     border-bottom: 1px solid #808080;
+ }
+
+ .grid3 {
+     border-right: 1px solid #808080;
+     border-top: 1px solid #808080;
+ }
+
+ .grid4 {
+     border-top: 1px solid #808080;
+     border-left: 1px solid #808080;
+ }
+
+ /*
+ * ***************************************
+ * フォトギャラリー系のCSS
+ * ***************************************
+ */
+
+ .photos-container {
+    border-top: solid 2px #808080;
+     display: flex;
+     padding: 100px 0 100px 0;
+ }
+
+ .photo1 {
+    margin: 0px 100px 150px 10px;
+ }
+
+ .photo2 {
+    margin: 140px 50px 100px 70px;
+}
+
+/*
+ * ***************************************
+ * aboutのCSS ・・・flexを使うかそのままか悩み中(JSで量が多くなればflex)
+ * ***************************************
+ */
+ .about-container {
+    border-top: solid 2px #808080;
+    padding-top: 70px;
+    text-align: center;
+ }
+
+ .references {
+     list-style-type: none;
+     font-size: 1.25rem;
+     line-height: 2.25rem;
+ }
+
