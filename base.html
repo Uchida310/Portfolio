@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale1">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1ce4482fb4.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body class="base">
@@ -14,16 +17,20 @@
             <div class="header-logo">
                 <img src="images/Portfolio-logo.png" alt=Portfolio-Logo>
             </div>
-            <div class="header-nav">
-                <ul class="nav-ul">
-
+            
+                <ul class="header-nav">
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">シルフェイド幻想譚</a></li>
+                    <li><a href="#">洞窟物語</a></li>
+                    <li><a href="#">モンスターの王様</a></li>
+                    <li><a href="#">GAME4</a></li>
                 </ul>
-            </div>
+ 
         </div>
     </header>
     <main>
         <div class="main-container">
-            <div class="hero">
+            <div class="hero" id="top">
                 <div class="hero-container">
                     <div class="hero-movie">
                         <video src="videos/testmovie.mp4" autoplay muted loop alt="各ゲームのショート動画"></video>
@@ -53,7 +60,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="column2">
+                    <div class="column2">            
+                        <div class="image">
+                            <img src="images/test.jpg" alt="test">
+                        </div>
                         <div class="text">
                             <p>テストテストテストテストテストテストテストテストテスト
                                 テストテストテストテストテストテストテストテストテスト
@@ -64,9 +74,6 @@
                                 テストテストテストテストテストテストテストテストテスト
                                 テストテストテストテストテストテストテストテストテスト
                             </p>
-                        </div>
-                        <div class="image">
-                            <img src="images/test.jpg" alt="test">
                         </div>
                     </div>
                 </div>
@@ -110,17 +117,26 @@
                         <ul class="references">
                             <li><a href="https://github.com/Uchida310/Portfolio.git">ProjectURL</a></li>
                             <li><a href="https://github.com/">Github(ソースコード管理に使用)</a></li>
-                            <li><a href="http://www.netyasun.com/home/color.html">ホームページ作成、運営管理ガイド</a></li>                           
+                            <li><a href="http://www.netyasun.com/home/color.html">ホームページ作成、運営管理ガイド</a></li>
                             <li><a href="https://www.pixis.co.jp">株式会社PIXIS(レイアウト参考)</a></li>
-                            <li><a href="https://direct.gihyo.jp/view/item/000000001556">教科書では教えてくれないHTML＆CSS・著者:狩野祐東/発行:技術評論社</a></li>
+                            <li><a
+                                    href="https://direct.gihyo.jp/view/item/000000001556">教科書では教えてくれないHTML＆CSS・著者:狩野祐東/発行:技術評論社</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
+
             </div>
     </main>
     <footer class="page-footer">
         <div class="footer-container">
-
+            <div class="thanks">
+                <p class="thanks-hero">Thank You For Watching.</p>
+                <p class="copylight"><small>&copy;2021 Mitsuya.Uchida</small></p>
+            </div>
+            <div class="return-top">
+                <a href="#top"><i class="fas fa-angle-up"></i></a>
+            </div>
         </div>
 
     </footer>
