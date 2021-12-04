@@ -168,9 +168,23 @@ main .main-container {
     text-align: left;
 }
 
+.text h2 {
+    padding: 0 0 5px 0;
+    margin: 0;
+    text-align: center;
+    color: azure;
+    
+}
+.text h2::first-letter {
+    font-weight: bold;
+    font-size: 40px;
+    color: red;
+  }
 .text p {
-    font-size: 1.15rem;
+    font-size: 1rem;
     color: #fff;
+    padding: 0;
+    margin: 0;
 }
 
 @media (max-width: 850px) {
@@ -249,7 +263,7 @@ main .main-container {
      padding: 100px 0 100px 0;
  }
 
- .photos-container img {
+ .photo-img {
      opacity: 0;
      animation: fadein-anim 10s linear forwards;
  }
@@ -340,3 +354,22 @@ main .main-container {
 .return-top a:hover {
     opacity: 0.8;
 }
+
+/*
+ * ***************************************
+ * アニメーション系のCSS
+ * ***************************************
+ */
+ .sa {
+    opacity: 0;
+    transition: all 1s ease;
+  }
+
+  .sa.show {
+    opacity: 1;
+    transform: none;
+  }
+
+  .sa–up {
+    transform: translate(0, 100px);
+  }
