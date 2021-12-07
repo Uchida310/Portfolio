@@ -50,6 +50,18 @@ main .main-container {
     padding: 0 20px 0 20px;
 }
 
+@media (max-width: 850px) {
+    html {
+        font-size: 14px;
+    }
+    main .main-container {
+        margin: 0 auto;
+        padding: 0;
+        
+    }
+}
+
+
 /*
  * ***************************************
  * Headr部分のCSS　
@@ -69,6 +81,7 @@ main .main-container {
 }
 
 @media (max-width: 765px) {
+    
     .header-logo img {
         width: 100px;
     }
@@ -93,12 +106,11 @@ main .main-container {
 
 .header-nav li {
     margin: 20px 2px 0px 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
 } 
 
 .header-nav li a {
     padding: 2px 15px 2px 15px;
-   
     color: azure;
     text-decoration: none;
     font-family: 'M PLUS 1p', sans-serif;
@@ -109,6 +121,74 @@ main .main-container {
     opacity: .7;
 }
 
+
+.hamburger-menu {
+    display: none;
+}
+
+
+#menu-btn-check {
+    display: none;
+}
+@media (max-width: 850px) {
+    .pc-header {
+        display: none;
+    }
+    .menu-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+        background-color: #fff;
+        border-radius: 20%;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #808080;
+        position: absolute;
+    }
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+    }
+    
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    .menu-content {
+        display: none;
+    }
+    input:checked ~ .menu-content{
+        display: inline-block;
+        z-index: 50;
+    }
+    
+}
 /*
  * ***************************************
  * hero部分のCSS　・・・文字を自動で縮小したい
@@ -122,7 +202,7 @@ main .main-container {
     position: relative;
 }
 .hero-text {
-    width:500px;
+    width:400px;
     position: absolute;
     top:  50%;
     left: 30px; 
@@ -132,6 +212,12 @@ main .main-container {
     font-size: 2rem;
     color: #fff;
     line-height: 3.5rem;
+}
+
+@media (max-width: 850px) {
+    .hero-text {
+        display: none;
+    }
 }
 
 /*
@@ -191,19 +277,20 @@ main .main-container {
     .column1 {
         display: inline-block;
         text-align: center;
+        
     }
     .column2 {
         display: inline-block;
-        text-align: center;
+        text-align: center;   
     }
     .text {
-        display: inline-block;
-        text-align: center;
+        text-align: left;
+        width: 95%;
+        margin: 0 5px 0 5px;
     }
     .image {
-        display: inline-block;
-        width: 70%;
         text-align: center;
+        width: 100%;
     }
 }
 
@@ -250,6 +337,16 @@ main .main-container {
          display: block;
      }
  }
+
+.genre {
+    font-size: .7rem;
+    font-style: italic;
+}
+
+.genre span {
+    font-weight: bold;
+}
+
 
  /*
  * ***************************************
