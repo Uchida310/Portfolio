@@ -231,7 +231,7 @@ main .main-container {
     border-top: solid 2px #808080;
     display: flex;
     margin: 15px 0;
-    padding-top: 70px;
+    padding-top: 70px;    
 }
 
 .column2 {
@@ -311,25 +311,54 @@ main .main-container {
 
 .grid {
     text-align: center;
+    text-shadow:
+    2px 0 0 black,
+    0 2px 0 black,
+    -2px 0 0 black,
+    0 -2px 0 black;
 }
  .grid1 {
      border-bottom: 1px solid #808080;
      border-right: 1px solid #808080;
+     background-image: url("../images/story_02.gif");
+     background-repeat: no-repeat;
+     background-size: 200px 200px;
+     background-color:rgba(26,26,26,0.8);
+     background-blend-mode: lighten;
+     background-position: 5% 75%;
  }
 
  .grid2 {
      border-left: 1px solid #808080;
      border-bottom: 1px solid #808080;
+     background-image: url("../images/doukutu.png");
+     background-repeat: no-repeat;
+     background-size: 200px 200px;
+     background-color:rgba(26,26,26,0.8);
+     background-blend-mode: lighten;
+     background-position: 5% 75%;
  }
 
  .grid3 {
      border-right: 1px solid #808080;
      border-top: 1px solid #808080;
+     background-image: url("../images/no_1.gif");
+     background-repeat: no-repeat;
+     background-size: 200px 200px;
+     background-color:rgba(26,26,26,0.8);
+     background-blend-mode: lighten;
+     background-position: 5% 75%;
  }
 
  .grid4 {
      border-top: 1px solid #808080;
      border-left: 1px solid #808080;
+     background-image: url("../images/random.png");
+     background-repeat: no-repeat;
+     background-size: 200px 200px;
+     background-color:rgba(26,26,26,0.8);
+     background-blend-mode: lighten;
+     background-position: 5% 75%;
  }
 
  @media (max-width: 850px) {
@@ -371,11 +400,11 @@ main .main-container {
      }
  }
  .photo1 {
-    margin: 0px 100px 150px 10px;
+    margin: 0px 50px 150px 30px;
  }
 
  .photo2 {
-    margin: 140px 50px 100px 70px;
+    margin: 140px 50px 100px 50px;
 }
 
 /*
