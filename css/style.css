@@ -425,6 +425,7 @@ main .main-container {
 .guide-about {
     grid-column: 4/7;
     grid-row: 1/4;
+    padding-left: 10px;
 }
 
 .guide-about  h1{
@@ -437,6 +438,21 @@ main .main-container {
     color: aquamarine;
     text-shadow: 2px 2px #558ABB;
 }
+
+.guide-h1B {
+    color: rgb(235, 207, 157);
+    text-shadow: 2px 2px darkgoldenrod;
+}
+.guide-h1C {
+    color: rgb(rgb(212, 81, 81), green, blue);
+    text-shadow: 2px 2px #558ABB;
+}
+.guide-h1D {
+    color: #FFB319;
+    text-shadow: 1px 1px #FFF399;
+}
+
+
 /*
  * ***************************************
  * aboutのCSS ・・・flexを使うかそのままか悩み中(JSで量が多くなればflex)
