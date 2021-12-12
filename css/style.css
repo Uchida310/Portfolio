@@ -387,11 +387,12 @@ main .main-container {
     border-top: solid 2px #808080;
      display: flex;
      padding: 100px 0 100px 0;
+     opacity: 0;
  }
 
- .photo-img {
-     opacity: 0;
-     animation: fadein-anim 10s linear forwards;
+
+ .fadein {
+    animation: fadein-anim 5s linear forwards;
  }
 
  @keyframes fadein-anim {
